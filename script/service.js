@@ -1,5 +1,14 @@
 app.service('customerServices', function(){
-	this.getcustomerDetails= function(){
-		return "This will return customer details"
-	}
+
+		var Sony={
+			name: 'Sony',
+			product: 'Mobile',
+			model: 'Xspiria',
+			modelNo: '101xer',
+			price: '20000' 
+
+		}
+		this.getSonyDetails=function(){
+			return Sony;
+		}
 })

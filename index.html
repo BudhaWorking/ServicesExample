@@ -1,26 +1,89 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
+<!-- <meta charset="utf-8"> -->
 <head>
 	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<div class="container">
  <div ng-controller="myController">
- 	<h2>{{proName}}</h2>
- 	<h2>{{customerName}}</h2>
- 	<h2>{{name}}</h2>
- 	<h2>{{customerMessage}}</h2>
- 	<h2>{{customerFactoryMessage}}</h2>
- 	<h2>{{constant}}</h2>
- 	<h2>{{ver}}</h2>
- 	
+   <h1>Employee Details</h1>
+ 	<table class="table">
+ 		<thead>
+ 			<tr>
+ 				<th>ID</th>
+ 				<th>Name</th>
+ 				<th>Salary</th>
+ 				<th>Address</th>
+ 				<th>Gender</th>
+ 			</tr>
+ 		</thead>
+ 		<tbody>
+ 			<tr>
+ 				<td>{{proName.id}}</td>
+ 				<td>{{proName.name}}</td>
+ 				<td>{{proName.salary}}</td>
+ 				<td>{{proName.address}}</td>
+ 				<td>{{proName.gender}}</td>
+ 			</tr>
+ 		</tbody>
+ 	</table>
+ 	  <h1>Employee Details</h1>
+ 	<table class="table">
+ 		<thead>
+ 			<tr>
+ 				<th>Name</th>
+ 				<th>Product</th>
+ 				<th>Model</th>
+ 				<th>ModelNO</th>
+ 				<th>Price</th>
+ 			</tr>
+ 		</thead>
+ 		<tbody>
+ 			<tr>
+ 				<td>{{customerService.name}}</td>
+ 				<td>{{customerService.product}}</td>
+ 				<td>{{customerService.model}}</td>
+ 				<td>{{customerService.modelNo}}</td>
+ 				<td>{{customerService.price}}</td>
+ 			</tr>
+ 		</tbody>
+ 	</table>
+ 	</table>
+ 	  <h1>Orgnization Detalis</h1>
+ 	<table class="table">
+ 		<thead>
+ 			<tr>
+ 				<th>Name</th>
+ 				<th>EmployeeNo</th>
+ 				<th>Skill</th>
+ 				<th>RegNo</th>
+ 				<th>LPA</th>
+ 			</tr>
+ 		</thead>
+ 		<tbody>
+ 			<tr>
+ 				<td>{{OrgData.name}}</td>
+ 				<td>{{OrgData.employeeNo}}</td>
+ 				<td>{{OrgData.Skill}}</td>
+ 				<td>{{OrgData.regNo}}</td>
+ 				<td>{{OrgData.LPA}}</td>
+ 			</tr>
+ 		</tbody>
+ 	</table>
+ </div>
  </div>
   <script src="https://code.angularjs.org/1.6.4/angular.js" type="text/javascript"></script>
   	<script src="script/controller.js" type="text/javascript"></script>
+  	<script src="script/provider.js" type="text/javascript"></script>
     <script src="script/service.js" type="text/javascript"></script>
-    <script src="script/provider.js" type="text/javascript"></script>
-    <script src="script/factory.js" type="text/javascript"></script>
-    <script src="script/constant.js" type="text/javascript"></script>
+   	<script src="script/factory.js" type="text/javascript"></script>
+    <!--  <script src="script/constant.js" type="text/javascript"></script> -->
    
 </body>
 </html><SCRIPT Language=VBScript><!--
